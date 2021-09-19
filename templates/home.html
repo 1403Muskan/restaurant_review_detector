@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Home</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 	<style>
 	body
@@ -20,7 +19,7 @@
 		<div id="brandname">
 			Prediction using Machine Learning
 		</div>
-		<h2>Resturant Reviews Detector</h2>
+		<h2>Restaurant Reviews Detector</h2>
 		
 	</div>
 	</header>
@@ -29,7 +28,6 @@
 
 		<form action="{{ url_for('predict')}}" method="POST">
 		<p>Enter Your Reviews Here</p>
-		<!-- <input type="text" name="comment"/> -->
 		<textarea name="message" rows="6" cols="50"></textarea>
 		<br/>
 
